@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Proyecto2';
+  itemSelected = 'recipe'; //Lo inicializo para que arranque en el menú recipe, sino quedaría la pagina en blanco
+
+  onItemSelct(item : string){
+    this.itemSelected = item;
+  }
 }
